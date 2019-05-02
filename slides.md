@@ -99,6 +99,9 @@ basic git commands/ reference http://rogerdudler.github.io/git-guide/
 *  workflows: https://nvie.com/posts/a-successful-git-branching-model/
 dry, but the video where it all clicked for me: https://www.youtube.com/watch?v=HVsySz-h9r4
 
+---
+
+style stuff
 
 <style type="text/css">
   body {
