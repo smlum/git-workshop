@@ -94,14 +94,18 @@ git and the command line
 
 
 
-[excellent tutorial (this one is based on it)](https://www.youtube.com/watch?v=yXT1ElMEkW8)
-basic git commands/ reference http://rogerdudler.github.io/git-guide/
-*  workflows: https://nvie.com/posts/a-successful-git-branching-model/
-dry, but the video where it all clicked for me: https://www.youtube.com/watch?v=HVsySz-h9r4
+*  [an excellent tutorial (this one is based on it)](https://www.youtube.com/watch?v=yXT1ElMEkW8)
+*  [basic git commands/ reference](http://rogerdudler.github.io/git-guide/)
+*  [git workflows](https://nvie.com/posts/a-successful-git-branching-model/)
+*  [the video where it all clicked for me](https://www.youtube.com/watch?v=HVsySz-h9r4
+)
+---
+
+thanks
 
 ---
 
-style stuff
+<!-- style stuff -->
 
 <style type="text/css">
   body {
