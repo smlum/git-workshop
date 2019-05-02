@@ -12,7 +12,7 @@ In just hour or so from now we will have:
 
 ---
 
-![alt text](img/version.png "version nightmare 1")
+![alt text](images/version.png "version nightmare 1")
 
 ---
 ### Git
@@ -29,7 +29,7 @@ In just hour or so from now we will have:
 *  that uses git behind the scenes <!-- .element: class="fragment" -->
 
 
-![alt text](img/zuck.png "version nightmare 1") <!-- .element: class="fragment" -->
+![alt text](images/zuck.png "version nightmare 1") <!-- .element: class="fragment" -->
 
 ---
 
@@ -63,7 +63,7 @@ url &rarr; browser &rarr; server &rarr; browser &rarr; done! <!-- .element: clas
 git and the command line
 
 ---
-<!-- .slide: data-background="img/heart.png" -->
+<!-- .slide: data-background="images/heart.png" -->
 ---
 
 #### UNIX commands:
