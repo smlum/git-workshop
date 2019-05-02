@@ -94,7 +94,7 @@ git and the command line
 
 
 
-*  [an excellent tutorial (this one is based on it)](https://www.youtube.com/watch?v=yXT1ElMEkW8)
+*  [an excellent tutorial (this one is based on it)](https://www.youtube.com/watch?v=BCQHnlnPusY)
 *  [basic git commands/ reference](http://rogerdudler.github.io/git-guide/)
 *  [git workflows](https://nvie.com/posts/a-successful-git-branching-model/)
 *  [the video where it all clicked for me](https://www.youtube.com/watch?v=HVsySz-h9r4
