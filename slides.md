@@ -1,9 +1,3 @@
-<style type="text/css">
-  body {
-    background-color: rgb(2, 10, 51)
-  }
-</style>
-
 # git?
 
 ---
@@ -104,3 +98,10 @@ git and the command line
 basic git commands/ reference http://rogerdudler.github.io/git-guide/
 *  workflows: https://nvie.com/posts/a-successful-git-branching-model/
 dry, but the video where it all clicked for me: https://www.youtube.com/watch?v=HVsySz-h9r4
+
+
+<style type="text/css">
+  body {
+    background-color: rgb(2, 10, 51)
+  }
+</style>
