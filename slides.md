@@ -52,7 +52,7 @@ github pages and websites
 
 #### what is a website?
 
-[example.com](example.com) <!-- .element: class="fragment" -->
+[example.com](https://example.com/) <!-- .element: class="fragment" -->
 
 url &rarr; browser &rarr; server &rarr; browser &rarr; done! <!-- .element: class="fragment" -->
 
