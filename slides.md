@@ -68,11 +68,13 @@ git and the command line
 
 #### UNIX commands:
 
+*  'clear' - clean up screen <!-- .element: class="fragment" -->
 *  'cd' - go to directory <!-- .element: class="fragment" -->
 *  'pwd' - where am i? <!-- .element: class="fragment" -->
 *  'ls' - list stuff in current directory <!-- .element: class="fragment" -->
 *  'cd ..' - go to parent directory <!-- .element: class="fragment" -->
 *  'cd' + tab - go to parent directory <!-- .element: class="fragment" -->
+*  up arrow - check command history <!-- .element: class="fragment" -->
 
 ---
 
