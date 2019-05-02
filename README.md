@@ -1,9 +1,9 @@
 # git-workshop
 All the good stuff used in the GIC git workshop.
 
-Raw slides are in [slide.md](https://github.com/samFredLumley/git-workshop/blob/master/slides.md), and full slides are at https://samfredlumley.github.io/git-workshop
+All the slide content is in [slide.md](https://github.com/samFredLumley/git-workshop/blob/master/slides.md), and the full slides are at https://samfredlumley.github.io/git-workshop
 
-The presentation was made using [reveal-md](https://github.com/webpro/reveal-md#static-website).
+The presentation was made using [reveal-md](https://github.com/webpro/reveal-md#static-website). 
 
 #### Some useful links:
 
