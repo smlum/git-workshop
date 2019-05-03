@@ -13,4 +13,3 @@ The presentation was made using [reveal-md](https://github.com/webpro/reveal-md#
 *  [the video where it all clicked for me](https://www.youtube.com/watch?v=HVsySz-h9r4
 )
 
-hello
