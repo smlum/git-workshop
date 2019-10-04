@@ -2,20 +2,20 @@
 
 ---
 
-In just hour or so from now we will have:
+We will:
 
-*  started our git journey <!-- .element: class="fragment" -->
-*  collaborated on a github project <!-- .element: class="fragment" -->
-*  made a website <!-- .element: class="fragment" -->
-*  hosted that website on github pages <!-- .element: class="fragment" -->
-*  used the command line to use git <!-- .element: class="fragment" -->
+*  Collaborate using git <!-- .element: class="fragment" -->
+*  Use git through the command line <!-- .element: class="fragment" -->
+*  Host a website using GitHub Pages <!-- .element: class="fragment" -->
 
 ---
 
-![alt text](images/version.png "version nightmare 1")
+### What is Git?
+
+![alt text](images/version2.jpeg "version nightmare 1")
 
 ---
-### Git
+### What is Git?
 
 *  version control <!-- .element: class="fragment" -->
 *  collaboration <!-- .element: class="fragment" -->

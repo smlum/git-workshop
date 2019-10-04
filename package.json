@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "reveal-md": "reveal-md",
-    "watch": "reveal-md slides.md -w",
+    "start": "reveal-md slides.md -w",
     "static": "reveal-md slides.md --static _site",
     "static-images": "reveal-md slides.md --static --static-dirs=images && mv _static docs"
   },
