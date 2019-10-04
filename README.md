@@ -1,6 +1,3 @@
-# git-workshop
-All the good stuff used in the GIC [Introduction to git workshop](https://gic.geog.mcgill.ca/events/introduction-to-git-2/).
-
 ## About
 
 This workshop will introduce you to git and GitHub. These tools are very cool and are industry standards for collaborative coding.
