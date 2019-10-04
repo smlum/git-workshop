@@ -18,7 +18,7 @@ We will:
 ### What is Git?
 
 *  version control <!-- .element: class="fragment" -->
-*  collaboration <!-- .element: class="fragment" -->
+*  Writing stuff collaboratively <!-- .element: class="fragment" -->
 
 ***  
 <!-- .element: class="fragment" -->
