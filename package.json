@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "reveal-md slides.md -w",
-    "static": "reveal-md slides.md --static _site",
-    "static-images": "reveal-md slides.md --static --static-dirs=images && mv _static docs"
+    "static": "reveal-md slides.md --static docs",
+    "static-images": "reveal-md slides.md --static --static-dirs=images && mv docs"
   },
   "author": "",
   "license": "ISC",
