@@ -25,7 +25,7 @@ We will:
 
 ### What is Git?
 
-![alt text](images/version2.jpeg "version nightmare 1")
+![alt text](./version2.jpeg "version nightmare 1")
 
 ---
 
