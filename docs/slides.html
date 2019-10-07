@@ -13,32 +13,50 @@
   </head>
   <body>
     <div class="reveal">
-      <div class="slides"><section  data-markdown><script type="text/template"># git?
-</script></section><section  data-markdown><script type="text/template">
-In just hour or so from now we will have:
+      <div class="slides"><section  data-markdown><script type="text/template"><style>
+.container{
+    display: flex;
+}
+.flex-col{
+    flex: 1;
+}
+p {
+  color: red
+}
+</style>
 
-*  started our git journey <!-- .element: class="fragment" -->
-*  collaborated on a github project <!-- .element: class="fragment" -->
-*  made a website <!-- .element: class="fragment" -->
-*  hosted that website on github pages <!-- .element: class="fragment" -->
-*  used the command line to use git <!-- .element: class="fragment" -->
-</script></section><section  data-markdown><script type="text/template">
-![alt text](images/version.png "version nightmare 1")
-</script></section><section  data-markdown><script type="text/template">### Git
 
+# git!
+</script></section><section  data-markdown><script type="text/template">
+We will:
+
+*  Collaborate using git <!-- .element: class="fragment" -->
+*  Use git through the command line <!-- .element: class="fragment" -->
+*  Host a website using GitHub Pages <!-- .element: class="fragment" -->
+</script></section><section  data-markdown><script type="text/template">
+### What is Git?
+
+![alt text](images/version2.jpeg "version nightmare 1")
+</script></section><section  data-markdown><script type="text/template">
+
+<section class="hbox"> 
+<div class="container">
+<div class="flex-col" data-markdown>
+
+### Git
 *  version control <!-- .element: class="fragment" -->
-*  collaboration <!-- .element: class="fragment" -->
+*  writing stuff collaboratively <!-- .element: class="fragment" -->
 
-***  
-<!-- .element: class="fragment" -->
+</div> <div class="flex-col" data-markdown> 
 
-### github <!-- .element: class="fragment" -->
-
+### Github 
 *  a web service to store stuff <!-- .element: class="fragment" -->
-*  that uses git behind the scenes <!-- .element: class="fragment" -->
+*  uses git behind the scenes <!-- .element: class="fragment" -->
+*  a place to chat about issues <!-- .element: class="fragment" -->
 
-
-![alt text](images/zuck.png "version nightmare 1") <!-- .element: class="fragment" -->
+</div> 
+</div> 
+</section>
 </script></section><section  data-markdown><script type="text/template">
 #### terms:
 
@@ -104,7 +122,6 @@ thanks
 </script></section></div>
     </div>
 
-    <script src="./lib/js/head.min.js"></script>
     <script src="./js/reveal.js"></script>
 
     <script>
@@ -123,7 +140,6 @@ thanks
 
       // Optional libraries used to extend on reveal.js
       var deps = [
-        { src: './lib/js/classList.js', condition: function() { return !document.body.classList; } },
         { src: './plugin/markdown/marked.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
         { src: './plugin/markdown/markdown.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
         { src: './plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
@@ -145,7 +161,7 @@ thanks
       // options from URL query string
       var queryOptions = Reveal.getQueryHash() || {};
 
-      var options = extend(defaultOptions, {"controls":false,"progress":true,"transition":"slide","transitionSpeed":"default","backgroundTransition":"fade","data-background-color":"red"}, queryOptions);
+      var options = extend(defaultOptions, {"controls":true,"progress":true,"transition":"slide","transitionSpeed":"default","backgroundTransition":"fade","data-background-color":"red"}, queryOptions);
     </script>
 
 
