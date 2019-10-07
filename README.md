@@ -13,14 +13,16 @@ You'll leave this workshop knowing how to:
 ### Before coming along
 
 *  Sign yourself up for an account on [GitHub](https://github.com/)
+*  [Install git](https://git-scm.com/downloads)
+*  [Set up git](https://help.github.com/en/articles/set-up-git)
 
 ### Some useful links:
 
-*  [an excellent YouTube tutorial (this one is based on it)](https://www.youtube.com/watch?v=BCQHnlnPusY)
-*  [a reference for basic git commands](http://rogerdudler.github.io/git-guide/)
-*  [an example of a git workflow](https://nvie.com/posts/a-successful-git-branching-model/)
+*  [great YouTube tutorial](https://www.youtube.com/watch?v=BCQHnlnPusY)
+*  [reference for git commands](http://rogerdudler.github.io/git-guide/)
+*  [example of a git workflow](https://nvie.com/posts/a-successful-git-branching-model/)
 
 
-#### This presentation 
+### This presentation 
 
 was made using [reveal-md](https://github.com/webpro/reveal-md#static-website). You can run the slides locally yourself

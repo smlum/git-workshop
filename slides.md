@@ -1,4 +1,17 @@
-# git?
+<style>
+.container{
+    display: flex;
+}
+.flex-col{
+    flex: 1;
+}
+p {
+  color: red
+}
+</style>
+
+
+# git!
 
 ---
 
@@ -15,21 +28,26 @@ We will:
 ![alt text](images/version2.jpeg "version nightmare 1")
 
 ---
-### What is Git?
 
+
+<section class="hbox"> 
+<div class="container">
+<div class="flex-col" data-markdown>
+
+### Git
 *  version control <!-- .element: class="fragment" -->
-*  Writing stuff collaboratively <!-- .element: class="fragment" -->
+*  writing stuff collaboratively <!-- .element: class="fragment" -->
 
-***  
-<!-- .element: class="fragment" -->
+</div> <div class="flex-col" data-markdown> 
 
-### github <!-- .element: class="fragment" -->
-
+### Github 
 *  a web service to store stuff <!-- .element: class="fragment" -->
-*  that uses git behind the scenes <!-- .element: class="fragment" -->
+*  uses git behind the scenes <!-- .element: class="fragment" -->
+*  a place to chat about issues <!-- .element: class="fragment" -->
 
-
-![alt text](images/zuck.png "version nightmare 1") <!-- .element: class="fragment" -->
+</div> 
+</div> 
+</section>
 
 ---
 
