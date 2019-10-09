@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-    <title>reveal-md</title>
+    <title>Intro to git</title>
     <link rel="stylesheet" href="./css/reveal.css" />
     <link rel="stylesheet" href="./css/theme/black.css" id="theme" />
     <link rel="stylesheet" href="./css/highlight/zenburn.css" />
@@ -13,7 +13,9 @@
   </head>
   <body>
     <div class="reveal">
-      <div class="slides"><section  data-markdown><script type="text/template"><!-- style stuff -->
+      <div class="slides"><section  data-markdown><script type="text/template">
+
+<!-- style stuff -->
 
 <style type="text/css">
 
@@ -52,7 +54,7 @@ img {
 
 li, p {
   color: rgba(255, 255, 255, 0.9);
-  font-size: 0.8em !important;
+  font-size: 0.7em !important;
 }
 
 .secondary {
@@ -116,10 +118,10 @@ a {
 *  create a "branch" <!-- .element: class="fragment" -->
 *  make a "pull request" <!-- .element: class="fragment" -->
 *  "fork" another repo <!-- .element: class="fragment" -->
-    *  [github.com/samFredLumley/my-diary](github.com/samFredLumley/my-diary)
+    *  [github.com/fungituser/my-site ](https://github.com/fungituser/my-site )
 *  create an "issue" <!-- .element: class="fragment" -->
 </script></section><section  data-markdown><script type="text/template">
-## part 2:
+## part 2
 
 Using git locally <!-- .element: class="fragment fade-in-then-semi-out" -->
 
@@ -191,6 +193,14 @@ $ git pull origin master # pull changes to local
 ``` 
 <!-- .element: class="fragment" -->
 </script></section><section  data-markdown><script type="text/template">
+### 🏃‍♀️ activity 
+
+*  <!-- .element: class="fragment" -->  "`cd`" to your desktop in terminal 
+*  <!-- .element: class="fragment" --> "`clone`" your remote repository 
+*  <!-- .element: class="fragment" --> edit "`portfolio.txt`" in a text editor 
+*  <!-- .element: class="fragment" --> "`add`" and "`commit`" the changes 
+*  <!-- .element: class="fragment" --> "`push`" the changes back to remote 
+</script></section><section  data-markdown><script type="text/template">
 ## part 3
 
 Let's make a website
@@ -201,18 +211,23 @@ Let's make a website
 </script></section><section  data-markdown><script type="text/template">
 ### 🏃‍♀️ activity 
 
-*  fork this repo <!-- .element: class="fragment" -->
+*  <!-- .element: class="fragment" --> change the name of "`portfolio.txt`" to "`index.html`"  
+*  go to settings > GitHub Pages <!-- .element: class="fragment" -->
+*  publish by selecting the master branch as source <!-- .element: class="fragment" -->
+*  fork this repo: <!-- .element: class="fragment" -->
     *  [github.com/samFredLumley/folio](github.com/samFredLumley/folio)
-*  turn on github pages in settings <!-- .element: class="fragment" -->
+*  publish on github pages like before <!-- .element: class="fragment" -->
 *  make some edits to <!-- .element: class="fragment" --> "`index.html`"
+</script></section><section  data-markdown><script type="text/template">
+### Thanks!
 </script></section><section  data-markdown><script type="text/template">
 ### links <!-- .element: class="white" -->
 
 *  [Great YouTube tutorial](https://www.youtube.com/watch?v=BCQHnlnPusY)
 *  [Reference for git commands](http://rogerdudler.github.io/git-guide/)
 *  [Example of a git workflow](https://nvie.com/posts/a-successful-git-branching-model/)
-</script></section><section  data-markdown><script type="text/template">
-Thanks!
+
+
 </script></section></div>
     </div>
 
@@ -257,7 +272,7 @@ Thanks!
       // options from URL query string
       var queryOptions = Reveal.getQueryHash() || {};
 
-      var options = extend(defaultOptions, {"controls":true,"progress":true,"transition":"slide","transitionSpeed":"default","backgroundTransition":"fade","data-background-color":"red"}, queryOptions);
+      var options = extend(defaultOptions, {"title":"hiu","controls":true,"progress":true,"transition":"slide","transitionSpeed":"default","backgroundTransition":"fade","data-background-color":"red"}, queryOptions);
     </script>
 
 

@@ -1,3 +1,7 @@
+---
+title: Intro to git
+---
+
 <!-- style stuff -->
 
 <style type="text/css">
@@ -37,7 +41,7 @@ img {
 
 li, p {
   color: rgba(255, 255, 255, 0.9);
-  font-size: 0.8em !important;
+  font-size: 0.7em !important;
 }
 
 .secondary {
@@ -109,12 +113,12 @@ a {
 *  create a "branch" <!-- .element: class="fragment" -->
 *  make a "pull request" <!-- .element: class="fragment" -->
 *  "fork" another repo <!-- .element: class="fragment" -->
-    *  [github.com/samFredLumley/my-diary](github.com/samFredLumley/my-diary)
+    *  [github.com/fungituser/my-site ](https://github.com/fungituser/my-site )
 *  create an "issue" <!-- .element: class="fragment" -->
 
 ---
 
-## part 2:
+## part 2
 
 Using git locally <!-- .element: class="fragment fade-in-then-semi-out" -->
 
@@ -196,6 +200,16 @@ $ git pull origin master # pull changes to local
 
 ---
 
+### 🏃‍♀️ activity 
+
+*  <!-- .element: class="fragment" -->  "`cd`" to your desktop in terminal 
+*  <!-- .element: class="fragment" --> "`clone`" your remote repository 
+*  <!-- .element: class="fragment" --> edit "`portfolio.txt`" in a text editor 
+*  <!-- .element: class="fragment" --> "`add`" and "`commit`" the changes 
+*  <!-- .element: class="fragment" --> "`push`" the changes back to remote 
+
+---
+
 ## part 3
 
 Let's make a website
@@ -210,10 +224,17 @@ Let's make a website
 
 ### 🏃‍♀️ activity 
 
-*  fork this repo <!-- .element: class="fragment" -->
+*  <!-- .element: class="fragment" --> change the name of "`portfolio.txt`" to "`index.html`"  
+*  go to settings > GitHub Pages <!-- .element: class="fragment" -->
+*  publish by selecting the master branch as source <!-- .element: class="fragment" -->
+*  fork this repo: <!-- .element: class="fragment" -->
     *  [github.com/samFredLumley/folio](github.com/samFredLumley/folio)
-*  turn on github pages in settings <!-- .element: class="fragment" -->
+*  publish on github pages like before <!-- .element: class="fragment" -->
 *  make some edits to <!-- .element: class="fragment" --> "`index.html`"
+
+---
+
+### Thanks!
 
 ---
 
@@ -223,6 +244,4 @@ Let's make a website
 *  [Reference for git commands](http://rogerdudler.github.io/git-guide/)
 *  [Example of a git workflow](https://nvie.com/posts/a-successful-git-branching-model/)
 
----
 
-Thanks!
