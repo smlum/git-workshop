@@ -13,20 +13,20 @@
     flex: 1;
 }
 
-h1 {
+h1, .white {
   color: white !important;
 }
 
 h2, h3, .highlight {
-  color: #c9679f !important;
+  color: #df61a8 !important;
 }
 
 .author {
-  color: #c9679f !important;
+  color: #df61a8 !important;
 }
 
 .avatar {
-    height: 150px;
+    height: 120px;
     margin: 0px !important;
 }
 
@@ -36,25 +36,29 @@ img {
 }
 
 li, p {
-  color: rgba(255, 255, 255, 0.9)
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.8em !important;
 }
 
 .secondary {
-  color: rgba(255, 255, 255, 0.4)
+  color: rgba(255, 255, 255, 0.45)
 }
 
 h4 {
   text-transform: lowercase !important;
   font-size: 0.5em !important;
   position: fixed !important;
-  bottom: 10px;
-  margin-bottom: 0px !important;
+  bottom: 0px;
+  margin-bottom: 10px !important;
   color: rgba(255, 255, 255, 0.6) !important;
+  left: 50%;
+  margin-left: -212px !important;
 }
 
 a {
-  color: #c9679f !important;
+  color: #f0afd4 !important;
 }
+
 /* this is just title page slide info text - to get around adding a class to mixed markdown text. Note should raise this as an issue on reveal md */
 
 </style>
@@ -82,11 +86,10 @@ a {
 
 ---
 
-
 ### Git 
 
-*  version control <!-- .element: class="fragment" -->
-*  writing stuff collaboratively <!-- .element: class="fragment" -->
+*  keep track of files in a project <!-- .element: class="fragment" -->
+*  merge content from different people <!-- .element: class="fragment" -->
 
 <hr> <!-- .element: class="fragment" -->
 
@@ -100,6 +103,7 @@ a {
 
 ### 🏃‍♀️ activity 
 
+*  login to <!-- .element: class="fragment" --> [GitHub](https://www.github.com)
 *  create a "repository" <!-- .element: class="fragment" -->
 *  "commit" a change <!-- .element: class="fragment" -->
 *  create a "branch" <!-- .element: class="fragment" -->
@@ -112,66 +116,113 @@ a {
 
 ## part 2:
 
-Using git locally 
+Using git locally <!-- .element: class="fragment fade-in-then-semi-out" -->
 
-aka hacking the mainframe <!-- .element: class="secondary fragment" -->
+aka hacking the mainframe <!-- .element: class="fragment" -->
 
 ---
 <!-- .slide: data-background="images/heart.png" -->
 ---
 
-#### UNIX commands:
+### UNIX commands:
 
-*  'clear' - clean up screen <!-- .element: class="fragment" -->
-*  'cd' - go to directory <!-- .element: class="fragment" -->
-*  'pwd' - where am i? <!-- .element: class="fragment" -->
-*  'ls' - list stuff in current directory <!-- .element: class="fragment" -->
-*  'cd ..' - go to parent directory <!-- .element: class="fragment" -->
-*  'cd' + tab - go to parent directory <!-- .element: class="fragment" -->
-*  up arrow - check command history <!-- .element: class="fragment" -->
+```bash
+$ clear # clean up the screen 
+``` 
+<!-- .element: class="fragment" -->
 
----
+```bash
+$ pwd # print working directory (where are we?)
+``` 
+<!-- .element: class="fragment" -->
 
-> we have github. why use git?
+```bash
+$ ls # list the stuff in current directory 
+``` 
+<!-- .element: class="fragment" -->
 
----
+```bash
+$ cd <directory> # choose (go to) a directory 
+``` 
+<!-- .element: class="fragment" -->
 
-#### git commands:
+```bash
+$ cd .. # go back a directory 
+``` 
+<!-- .element: class="fragment" -->
 
-*  'git clone' - create a local copy of a repository <!-- .element: class="fragment" -->
-*  'git status' - tells us what's going on <!-- .element: class="fragment" -->
-*  'git commit -a -m “message”' - commits all changes with a message <!-- .element: class="fragment" -->
-*  'git push origin master' - push local changes to remote <!-- .element: class="fragment" -->
-*  'git pull origin master' - pull remote changes to local <!-- .element: class="fragment" -->
-
----
-
-## part 2
-
-github pages and websites
 
 ---
 
-#### what is a website?
+### Setting up
+
+*  [Install git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) 
+*  Open Terminal (Mac) or Command Line (Windows)
+*  Tell git who you are:
+
+```bash
+$ git config --global user.name "Justin Trudeau"
+$ git config --global user.email "jtno1@hotmail.com"
+```
+
+---
+
+### git commands:
+
+```bash
+$ git clone <url> # create a local copy of a remote repo 
+``` 
+<!-- .element: class="fragment" -->
+
+```bash
+$ git add -A # add altered files to staging area
+``` 
+<!-- .element: class="fragment" -->
+
+```bash
+$ git commit -a -m “message” # commit with a reason 
+``` 
+<!-- .element: class="fragment" -->
+
+```bash
+$ git push origin master # push changes back to remote 
+``` 
+<!-- .element: class="fragment" -->
+
+```bash
+$ git pull origin master # pull changes to local 
+``` 
+<!-- .element: class="fragment" -->
+
+---
+
+## part 3
+
+Let's make a website
+
+---
+
+### what is a website? <!-- .element: class="white" -->
 
 [example.com](https://example.com/) <!-- .element: class="fragment" -->
 
-url &rarr; browser &rarr; server &rarr; browser &rarr; done! <!-- .element: class="fragment" -->
+---
+
+### 🏃‍♀️ activity 
+
+*  fork this repo <!-- .element: class="fragment" -->
+    *  [github.com/samFredLumley/folio](github.com/samFredLumley/folio)
+*  turn on github pages in settings <!-- .element: class="fragment" -->
+*  make some edits to <!-- .element: class="fragment" --> "`index.html`"
 
 ---
 
-#### links
+### links <!-- .element: class="white" -->
 
-
-
-*  [an excellent tutorial (this one is based on it)](https://www.youtube.com/watch?v=BCQHnlnPusY)
-*  [basic git commands/ reference](http://rogerdudler.github.io/git-guide/)
-*  [git workflows](https://nvie.com/posts/a-successful-git-branching-model/)
-*  [the video where it all clicked for me](https://www.youtube.com/watch?v=HVsySz-h9r4
-)
----
-
-thanks
+*  [Great YouTube tutorial](https://www.youtube.com/watch?v=BCQHnlnPusY)
+*  [Reference for git commands](http://rogerdudler.github.io/git-guide/)
+*  [Example of a git workflow](https://nvie.com/posts/a-successful-git-branching-model/)
 
 ---
 
+Thanks!
