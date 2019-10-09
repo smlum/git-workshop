@@ -9,116 +9,211 @@
     <link rel="stylesheet" href="./css/theme/black.css" id="theme" />
     <link rel="stylesheet" href="./css/highlight/zenburn.css" />
     <link rel="stylesheet" href="./css/print/paper.css" type="text/css" media="print" />
+    <link rel="stylesheet" href="./_assets/style.css" />
 
   </head>
   <body>
     <div class="reveal">
-      <div class="slides"><section  data-markdown><script type="text/template"><style>
+      <div class="slides"><section  data-markdown><script type="text/template"><!-- style stuff -->
+
+<style type="text/css">
+
+  body {
+    background-color: #0c0032
+  }
+  
 .container{
     display: flex;
 }
 .flex-col{
     flex: 1;
 }
-p {
-  color: red
+
+h1, .white {
+  color: white !important;
 }
+
+h2, h3, .highlight {
+  color: #df61a8 !important;
+}
+
+.author {
+  color: #df61a8 !important;
+}
+
+.avatar {
+    height: 120px;
+    margin: 0px !important;
+}
+
+img {
+  border: 0px !important;
+  background: rgba(255, 255, 255, 0) !important;
+}
+
+li, p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.8em !important;
+}
+
+.secondary {
+  color: rgba(255, 255, 255, 0.45)
+}
+
+h4 {
+  text-transform: lowercase !important;
+  font-size: 0.5em !important;
+  position: fixed !important;
+  bottom: 0px;
+  margin-bottom: 10px !important;
+  color: rgba(255, 255, 255, 0.6) !important;
+  left: 50%;
+  margin-left: -212px !important;
+}
+
+a {
+  color: #f0afd4 !important;
+}
+
+/* this is just title page slide info text - to get around adding a class to mixed markdown text. Note should raise this as an issue on reveal md */
+
 </style>
 
 
-# git!
-</script></section><section  data-markdown><script type="text/template">
-We will:
+# intro to git
 
-*  Collaborate using git <!-- .element: class="fragment" -->
+<img src="images/sam-git-pink.png"> <!-- .element: class="avatar" -->
+
+#### slides at: [samfredlumley.github.io/git-workshop](https://samfredlumley.github.io/git-workshop/) 
+</script></section><section  data-markdown><script type="text/template">
+### We will...
+
+*  Set up a project on GitHub <!-- .element: class="fragment" -->
 *  Use git through the command line <!-- .element: class="fragment" -->
 *  Host a website using GitHub Pages <!-- .element: class="fragment" -->
 </script></section><section  data-markdown><script type="text/template">
-### What is Git?
 
 ![alt text](images/version2.jpeg "version nightmare 1")
+
 </script></section><section  data-markdown><script type="text/template">
+### Git 
 
-<section class="hbox"> 
-<div class="container">
-<div class="flex-col" data-markdown>
+*  keep track of files in a project <!-- .element: class="fragment" -->
+*  merge content from different people <!-- .element: class="fragment" -->
 
-### Git
-*  version control <!-- .element: class="fragment" -->
-*  writing stuff collaboratively <!-- .element: class="fragment" -->
+<hr> <!-- .element: class="fragment" -->
 
-</div> <div class="flex-col" data-markdown> 
+### GitHub  <!-- .element: class="fragment" -->
 
-### Github 
-*  a web service to store stuff <!-- .element: class="fragment" -->
-*  uses git behind the scenes <!-- .element: class="fragment" -->
+*  a web service to store files <!-- .element: class="fragment" -->
+*  git behind the scenes <!-- .element: class="fragment" -->
 *  a place to chat about issues <!-- .element: class="fragment" -->
-
-</div> 
-</div> 
-</section>
 </script></section><section  data-markdown><script type="text/template">
-#### terms:
+### 🏃‍♀️ activity 
 
-*  repository  - a place to keep files <!-- .element: class="fragment" -->
-*  commit - save <!-- .element: class="fragment" -->
-*  branch - alternate version of the repository <!-- .element: class="fragment" -->
-*  master - the main branch <!-- .element: class="fragment" -->
-*  pull request - asking to take changes back into master <!-- .element: class="fragment" -->
-*  fork - create a replica of a repository <!-- .element: class="fragment" -->
+*  login to <!-- .element: class="fragment" --> [GitHub](https://www.github.com)
+*  create a "repository" <!-- .element: class="fragment" -->
+*  "commit" a change <!-- .element: class="fragment" -->
+*  create a "branch" <!-- .element: class="fragment" -->
+*  make a "pull request" <!-- .element: class="fragment" -->
+*  "fork" another repo <!-- .element: class="fragment" -->
+    *  [github.com/samFredLumley/my-diary](github.com/samFredLumley/my-diary)
+*  create an "issue" <!-- .element: class="fragment" -->
 </script></section><section  data-markdown><script type="text/template">
-## part 2
+## part 2:
 
-github pages and websites
+Using git locally <!-- .element: class="fragment fade-in-then-semi-out" -->
+
+aka hacking the mainframe <!-- .element: class="fragment" -->
+</script></section><section  data-markdown><script type="text/template"><!-- .slide: data-background="images/heart.png" --></script></section><section  data-markdown><script type="text/template">
+### UNIX commands:
+
+```bash
+$ clear # clean up the screen 
+``` 
+<!-- .element: class="fragment" -->
+
+```bash
+$ pwd # print working directory (where are we?)
+``` 
+<!-- .element: class="fragment" -->
+
+```bash
+$ ls # list the stuff in current directory 
+``` 
+<!-- .element: class="fragment" -->
+
+```bash
+$ cd <directory> # choose (go to) a directory 
+``` 
+<!-- .element: class="fragment" -->
+
+```bash
+$ cd .. # go back a directory 
+``` 
+<!-- .element: class="fragment" -->
+
 </script></section><section  data-markdown><script type="text/template">
-#### what is a website?
+### Setting up
 
-[example.com](https://example.com/) <!-- .element: class="fragment" -->
+*  [Install git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) 
+*  Open Terminal (Mac) or Command Line (Windows)
+*  Tell git who you are:
 
-url &rarr; browser &rarr; server &rarr; browser &rarr; done! <!-- .element: class="fragment" -->
+```bash
+$ git config --global user.name "Justin Trudeau"
+$ git config --global user.email "jtno1@hotmail.com"
+```
+</script></section><section  data-markdown><script type="text/template">
+### git commands:
+
+```bash
+$ git clone <url> # create a local copy of a remote repo 
+``` 
+<!-- .element: class="fragment" -->
+
+```bash
+$ git add -A # add altered files to staging area
+``` 
+<!-- .element: class="fragment" -->
+
+```bash
+$ git commit -a -m “message” # commit with a reason 
+``` 
+<!-- .element: class="fragment" -->
+
+```bash
+$ git push origin master # push changes back to remote 
+``` 
+<!-- .element: class="fragment" -->
+
+```bash
+$ git pull origin master # pull changes to local 
+``` 
+<!-- .element: class="fragment" -->
 </script></section><section  data-markdown><script type="text/template">
 ## part 3
 
-git and the command line
-</script></section><section  data-markdown><script type="text/template"><!-- .slide: data-background="images/heart.png" --></script></section><section  data-markdown><script type="text/template">
-#### UNIX commands:
-
-*  'clear' - clean up screen <!-- .element: class="fragment" -->
-*  'cd' - go to directory <!-- .element: class="fragment" -->
-*  'pwd' - where am i? <!-- .element: class="fragment" -->
-*  'ls' - list stuff in current directory <!-- .element: class="fragment" -->
-*  'cd ..' - go to parent directory <!-- .element: class="fragment" -->
-*  'cd' + tab - go to parent directory <!-- .element: class="fragment" -->
-*  up arrow - check command history <!-- .element: class="fragment" -->
+Let's make a website
 </script></section><section  data-markdown><script type="text/template">
-> we have github. why use git?
+### what is a website? <!-- .element: class="white" -->
+
+[example.com](https://example.com/) <!-- .element: class="fragment" -->
 </script></section><section  data-markdown><script type="text/template">
-#### git commands:
+### 🏃‍♀️ activity 
 
-*  'git clone' - create a local copy of a repository <!-- .element: class="fragment" -->
-*  'git status' - tells us what's going on <!-- .element: class="fragment" -->
-*  'git commit -a -m “message”' - commits all changes with a message <!-- .element: class="fragment" -->
-*  'git push origin master' - push local changes to remote <!-- .element: class="fragment" -->
-*  'git pull origin master' - pull remote changes to local <!-- .element: class="fragment" -->
+*  fork this repo <!-- .element: class="fragment" -->
+    *  [github.com/samFredLumley/folio](github.com/samFredLumley/folio)
+*  turn on github pages in settings <!-- .element: class="fragment" -->
+*  make some edits to <!-- .element: class="fragment" --> "`index.html`"
 </script></section><section  data-markdown><script type="text/template">
-#### links
+### links <!-- .element: class="white" -->
 
-
-
-*  [an excellent tutorial (this one is based on it)](https://www.youtube.com/watch?v=BCQHnlnPusY)
-*  [basic git commands/ reference](http://rogerdudler.github.io/git-guide/)
-*  [git workflows](https://nvie.com/posts/a-successful-git-branching-model/)
-*  [the video where it all clicked for me](https://www.youtube.com/watch?v=HVsySz-h9r4
-)</script></section><section  data-markdown><script type="text/template">
-thanks
+*  [Great YouTube tutorial](https://www.youtube.com/watch?v=BCQHnlnPusY)
+*  [Reference for git commands](http://rogerdudler.github.io/git-guide/)
+*  [Example of a git workflow](https://nvie.com/posts/a-successful-git-branching-model/)
 </script></section><section  data-markdown><script type="text/template">
-<!-- style stuff -->
-
-<style type="text/css">
-  body {
-    background-color: rgb(2, 10, 51)
-  }
-</style>
+Thanks!
 </script></section></div>
     </div>
 
