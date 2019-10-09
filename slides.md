@@ -35,8 +35,12 @@ img {
   background: rgba(255, 255, 255, 0) !important;
 }
 
-li {
+li, p {
   color: rgba(255, 255, 255, 0.9)
+}
+
+.secondary {
+  color: rgba(255, 255, 255, 0.4)
 }
 
 </style>
@@ -72,40 +76,29 @@ li {
 
 ### GitHub  <!-- .element: class="fragment" -->
 
-*  a web service to store stuff <!-- .element: class="fragment" -->
-*  uses git behind the scenes <!-- .element: class="fragment" -->
+*  a web service to store files <!-- .element: class="fragment" -->
+*  git behind the scenes <!-- .element: class="fragment" -->
 *  a place to chat about issues <!-- .element: class="fragment" -->
 
 ---
 
-#### terms:
+### 🏃‍♀️ activity 
 
-*  repository  - a place to keep files <!-- .element: class="fragment" -->
-*  commit - save <!-- .element: class="fragment" -->
-*  branch - alternate version of the repository <!-- .element: class="fragment" -->
-*  master - the main branch <!-- .element: class="fragment" -->
-*  pull request - asking to take changes back into master <!-- .element: class="fragment" -->
-*  fork - create a replica of a repository <!-- .element: class="fragment" -->
-
----
-
-## part 2
-
-github pages and websites
+*  create a "repository" <!-- .element: class="fragment" -->
+*  "commit" a change <!-- .element: class="fragment" -->
+*  create a "branch" <!-- .element: class="fragment" -->
+*  make a "pull request" <!-- .element: class="fragment" -->
+*  "fork" another repo <!-- .element: class="fragment" -->
+    *  [github.com/samFredLumley/my-diary](github.com/samFredLumley/my-diary)
+*  create an "issue" <!-- .element: class="fragment" -->
 
 ---
 
-#### what is a website?
+## part 2:
 
-[example.com](https://example.com/) <!-- .element: class="fragment" -->
+Using git locally 
 
-url &rarr; browser &rarr; server &rarr; browser &rarr; done! <!-- .element: class="fragment" -->
-
----
-
-## part 3
-
-git and the command line
+aka hacking the mainframe <!-- .element: class="secondary" -->
 
 ---
 <!-- .slide: data-background="images/heart.png" -->
@@ -134,6 +127,20 @@ git and the command line
 *  'git commit -a -m “message”' - commits all changes with a message <!-- .element: class="fragment" -->
 *  'git push origin master' - push local changes to remote <!-- .element: class="fragment" -->
 *  'git pull origin master' - pull remote changes to local <!-- .element: class="fragment" -->
+
+---
+
+## part 2
+
+github pages and websites
+
+---
+
+#### what is a website?
+
+[example.com](https://example.com/) <!-- .element: class="fragment" -->
+
+url &rarr; browser &rarr; server &rarr; browser &rarr; done! <!-- .element: class="fragment" -->
 
 ---
 
