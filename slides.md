@@ -1,53 +1,80 @@
-<style>
+<!-- style stuff -->
+
+<style type="text/css">
+
+  body {
+    background-color: #0c0032
+  }
+  
 .container{
     display: flex;
 }
 .flex-col{
     flex: 1;
 }
-p {
-  color: red
+
+h1 {
+  color: white !important;
 }
+
+h2, h3, .highlight {
+  color: #c9679f !important;
+}
+
+.author {
+  color: #c9679f !important;
+}
+
+.avatar {
+    height: 150px;
+    margin: 0px !important;
+}
+
+img {
+  border: 0px !important;
+  background: rgba(255, 255, 255, 0) !important;
+}
+
+li {
+  color: rgba(255, 255, 255, 0.9)
+}
+
 </style>
 
 
-# git!
+# intro to git
+
+<img src="images/sam-git-pink.png"> <!-- .element: class="avatar" -->
 
 ---
 
-We will:
+### We will...
 
-*  Collaborate using git <!-- .element: class="fragment" -->
+*  Set up a project on GitHub <!-- .element: class="fragment" -->
 *  Use git through the command line <!-- .element: class="fragment" -->
 *  Host a website using GitHub Pages <!-- .element: class="fragment" -->
 
 ---
 
-### What is Git?
 
 ![alt text](images/version2.jpeg "version nightmare 1")
+
 
 ---
 
 
-<section class="hbox"> 
-<div class="container">
-<div class="flex-col" data-markdown>
+### Git 
 
-### Git
 *  version control <!-- .element: class="fragment" -->
 *  writing stuff collaboratively <!-- .element: class="fragment" -->
 
-</div> <div class="flex-col" data-markdown> 
+<hr> <!-- .element: class="fragment" -->
 
-### Github 
+### GitHub  <!-- .element: class="fragment" -->
+
 *  a web service to store stuff <!-- .element: class="fragment" -->
 *  uses git behind the scenes <!-- .element: class="fragment" -->
 *  a place to chat about issues <!-- .element: class="fragment" -->
-
-</div> 
-</div> 
-</section>
 
 ---
 
@@ -125,10 +152,3 @@ thanks
 
 ---
 
-<!-- style stuff -->
-
-<style type="text/css">
-  body {
-    background-color: rgb(2, 10, 51)
-  }
-</style>
