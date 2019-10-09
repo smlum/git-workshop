@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>reveal-md</title>
+    <link rel="stylesheet" href="./css/reveal.css" />
+    <link rel="stylesheet" href="./css/theme/black.css" id="theme" />
+    <link rel="stylesheet" href="./css/highlight/zenburn.css" />
+    <link rel="stylesheet" href="./css/print/paper.css" type="text/css" media="print" />
+
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides"><section  data-markdown><script type="text/template"><!-- style stuff -->
+
+<style type="text/css">
+
+  body {
+    background-color: #0c0032
+  }
+  
+.container{
+    display: flex;
+}
+.flex-col{
+    flex: 1;
+}
+
+h1, .white {
+  color: white !important;
+}
+
+h2, h3, .highlight {
+  color: #df61a8 !important;
+}
+
+.author {
+  color: #df61a8 !important;
+}
+
+.avatar {
+    height: 120px;
+    margin: 0px !important;
+}
+
+img {
+  border: 0px !important;
+  background: rgba(255, 255, 255, 0) !important;
+}
+
+li, p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.8em !important;
+}
+
+.secondary {
+  color: rgba(255, 255, 255, 0.45)
+}
+
+h4 {
+  text-transform: lowercase !important;
+  font-size: 0.5em !important;
+  position: fixed !important;
+  bottom: 0px;
+  margin-bottom: 10px !important;
+  color: rgba(255, 255, 255, 0.6) !important;
+  left: 50%;
+  margin-left: -212px !important;
+}
+
+a {
+  color: #f0afd4 !important;
+}
+
+/* this is just title page slide info text - to get around adding a class to mixed markdown text. Note should raise this as an issue on reveal md */
+
+</style>
+
+
+# intro to git
+
+<img src="images/sam-git-pink.png"> <!-- .element: class="avatar" -->
+
+#### slides at: [samfredlumley.github.io/git-workshop](https://samfredlumley.github.io/git-workshop/) 
+</script></section><section  data-markdown><script type="text/template">
+### We will...
+
+*  Set up a project on GitHub <!-- .element: class="fragment" -->
+*  Use git through the command line <!-- .element: class="fragment" -->
+*  Host a website using GitHub Pages <!-- .element: class="fragment" -->
+</script></section><section  data-markdown><script type="text/template">
+
+![alt text](images/version2.jpeg "version nightmare 1")
+
+</script></section><section  data-markdown><script type="text/template">
+### Git 
+
+*  keep track of files in a project <!-- .element: class="fragment" -->
+*  merge content from different people <!-- .element: class="fragment" -->
+
+<hr> <!-- .element: class="fragment" -->
+
+### GitHub  <!-- .element: class="fragment" -->
+
+*  a web service to store files <!-- .element: class="fragment" -->
+*  git behind the scenes <!-- .element: class="fragment" -->
+*  a place to chat about issues <!-- .element: class="fragment" -->
+</script></section><section  data-markdown><script type="text/template">
+### 🏃‍♀️ activity 
+
+*  login to <!-- .element: class="fragment" --> [GitHub](https://www.github.com)
+*  create a "repository" <!-- .element: class="fragment" -->
+*  "commit" a change <!-- .element: class="fragment" -->
+*  create a "branch" <!-- .element: class="fragment" -->
+*  make a "pull request" <!-- .element: class="fragment" -->
+*  "fork" another repo <!-- .element: class="fragment" -->
+    *  [github.com/samFredLumley/my-diary](github.com/samFredLumley/my-diary)
+*  create an "issue" <!-- .element: class="fragment" -->
+</script></section><section  data-markdown><script type="text/template">
+## part 2:
+
+Using git locally <!-- .element: class="fragment fade-in-then-semi-out" -->
+
+aka hacking the mainframe <!-- .element: class="fragment" -->
+</script></section><section  data-markdown><script type="text/template"><!-- .slide: data-background="images/heart.png" --></script></section><section  data-markdown><script type="text/template">
+### UNIX commands:
+
+```bash
+$ clear # clean up the screen 
+``` 
+<!-- .element: class="fragment" -->
+
+```bash
+$ pwd # print working directory (where are we?)
+``` 
+<!-- .element: class="fragment" -->
+
+```bash
+$ ls # list the stuff in current directory 
+``` 
+<!-- .element: class="fragment" -->
+
+```bash
+$ cd <directory> # choose (go to) a directory 
+``` 
+<!-- .element: class="fragment" -->
+
+```bash
+$ cd .. # go back a directory 
+``` 
+<!-- .element: class="fragment" -->
+
+</script></section><section  data-markdown><script type="text/template">
+### Setting up
+
+*  [Install git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) 
+*  Open Terminal (Mac) or Command Line (Windows)
+*  Tell git who you are:
+
+```bash
+$ git config --global user.name "Justin Trudeau"
+$ git config --global user.email "jtno1@hotmail.com"
+```
+</script></section><section  data-markdown><script type="text/template">
+### git commands:
+
+```bash
+$ git clone <url> # create a local copy of a remote repo 
+``` 
+<!-- .element: class="fragment" -->
+
+```bash
+$ git add -A # add altered files to staging area
+``` 
+<!-- .element: class="fragment" -->
+
+```bash
+$ git commit -a -m “message” # commit with a reason 
+``` 
+<!-- .element: class="fragment" -->
+
+```bash
+$ git push origin master # push changes back to remote 
+``` 
+<!-- .element: class="fragment" -->
+
+```bash
+$ git pull origin master # pull changes to local 
+``` 
+<!-- .element: class="fragment" -->
+</script></section><section  data-markdown><script type="text/template">
+## part 3
+
+Let's make a website
+</script></section><section  data-markdown><script type="text/template">
+### what is a website? <!-- .element: class="white" -->
+
+[example.com](https://example.com/) <!-- .element: class="fragment" -->
+</script></section><section  data-markdown><script type="text/template">
+### 🏃‍♀️ activity 
+
+*  fork this repo <!-- .element: class="fragment" -->
+    *  [github.com/samFredLumley/folio](github.com/samFredLumley/folio)
+*  turn on github pages in settings <!-- .element: class="fragment" -->
+*  make some edits to <!-- .element: class="fragment" --> "`index.html`"
+</script></section><section  data-markdown><script type="text/template">
+### links <!-- .element: class="white" -->
+
+*  [Great YouTube tutorial](https://www.youtube.com/watch?v=BCQHnlnPusY)
+*  [Reference for git commands](http://rogerdudler.github.io/git-guide/)
+*  [Example of a git workflow](https://nvie.com/posts/a-successful-git-branching-model/)
+</script></section><section  data-markdown><script type="text/template">
+Thanks!
+</script></section></div>
+    </div>
+
+    <script src="./lib/js/head.min.js"></script>
+    <script src="./js/reveal.js"></script>
+
+    <script>
+      function extend() {
+        var target = {};
+        for (var i = 0; i < arguments.length; i++) {
+          var source = arguments[i];
+          for (var key in source) {
+            if (source.hasOwnProperty(key)) {
+              target[key] = source[key];
+            }
+          }
+        }
+        return target;
+      }
+
+      // Optional libraries used to extend on reveal.js
+      var deps = [
+        { src: './lib/js/classList.js', condition: function() { return !document.body.classList; } },
+        { src: './plugin/markdown/marked.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+        { src: './plugin/markdown/markdown.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+        { src: './plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+        { src: './plugin/zoom-js/zoom.js', async: true },
+        { src: './plugin/notes/notes.js', async: true },
+        { src: './plugin/math/math.js', async: true }
+      ];
+
+      // default options to init reveal.js
+      var defaultOptions = {
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        dependencies: deps
+      };
+
+      // options from URL query string
+      var queryOptions = Reveal.getQueryHash() || {};
+
+      var options = extend(defaultOptions, {"controls":true,"progress":true,"transition":"slide","transitionSpeed":"default","backgroundTransition":"fade","data-background-color":"red"}, queryOptions);
+    </script>
+
+
+    <script>
+      Reveal.initialize(options);
+    </script>
+  </body>
+</html>
