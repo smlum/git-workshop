@@ -1,6 +1,6 @@
 ## About
 
-This workshop will introduce you to git and GitHub. These tools are very cool and are industry standards for collaborative coding.
+This workshop will introduce you to git and GitHub, two industry standards for tracking projects.
 
 You'll leave this workshop knowing how to:
 
