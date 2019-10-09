@@ -43,12 +43,28 @@ li, p {
   color: rgba(255, 255, 255, 0.4)
 }
 
+h4 {
+  text-transform: lowercase !important;
+  font-size: 0.5em !important;
+  position: fixed !important;
+  bottom: 10px;
+  margin-bottom: 0px !important;
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+a {
+  color: #c9679f !important;
+}
+/* this is just title page slide info text - to get around adding a class to mixed markdown text. Note should raise this as an issue on reveal md */
+
 </style>
 
 
 # intro to git
 
 <img src="images/sam-git-pink.png"> <!-- .element: class="avatar" -->
+
+#### slides at: [samfredlumley.github.io/git-workshop](https://samfredlumley.github.io/git-workshop/) 
 
 ---
 
@@ -98,7 +114,7 @@ li, p {
 
 Using git locally 
 
-aka hacking the mainframe <!-- .element: class="secondary" -->
+aka hacking the mainframe <!-- .element: class="secondary fragment" -->
 
 ---
 <!-- .slide: data-background="images/heart.png" -->
