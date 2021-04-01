@@ -8,7 +8,7 @@ You'll leave this workshop knowing how to:
 *  Use git through the command line
 *  Make and host a website using GitHub Pages
 
-[Workshop slides](https://samfredlumley.github.io/git-workshop)
+[Workshop slides](https://smlum.github.io/git-workshop)
 
 ### Before coming along
 
